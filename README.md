@@ -1,14 +1,22 @@
 Twin Cities Arduino CoderDojo
 =======
-We are currently using the [SparkFun Inventors Kit](https://www.sparkfun.com/products/12001).  One of the reasons we selected this kit because it has an excellent [Guidebook PDF](http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Kits/SFE-SIK-RedBoard-Guide-Version3.0-Online.pdf) which we encourage you to download and familiarize yourself with before you come to the classes.
+Welcome!  This area is for students and mentors that are participating in the Twin Cities CoderDojo sessions.  Please let one of the mentors know if you have feedback that you think will help others.
+
+We are currently using the [SparkFun Inventors Kit](https://www.sparkfun.com/products/12001) to guide our students.  Although you are not required to follow the guidebook we encourage our new students to try these labs out first.
+
+One of the reasons we selected this kit because it has an excellent free to download [Guidebook PDF](http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Kits/SFE-SIK-RedBoard-Guide-Version3.0-Online.pdf) which we encourage you to download and familiarize yourself with before you come to the classes.
+
+Why Arduino?
+======
+Since 2007 the Arduino name has come to dominate beginning digital controllers.  They are relativly low cost (some as low as $2) and they have a strong library of open source software.  Concepts that you learn programming the Arduino can also be applied toward other computers..
 
 Bringing Your Own Computer
 =======
-We encourage you to bring your own computer.  Although we do have some computers, we don't have enough for everyone.
+We encourage students to bring their own computer whenever possible.  Although we do have some computers, we don't have enough for everyone.  In order for you to get the most out of the class we encourage you to try the following three steps BEFORE you arrive.
 
 Step 1: Download the Arduino IDE
 ------
-pre-load the [Arduino IDE](http://arduino.cc/en/Main/Software)
+pre-load the [Arduino Integrated Development Environment (IDE)](http://arduino.cc/en/Main/Software).  This free software will run on Windows, Macs and Linux systems.  If you are familiar with the Eclipse this is a version of Eclipse that have been extensivly customized for Arduinos.  The IDE comes pre-loaded with many sample programs.  If you have questions about how to use the application please see the Arduino web site.  There are also many YouTube videos that show you how the Arduino systems work.
 
 Step 2: Download the Correct FT231 USB Driver
 ------

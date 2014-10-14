@@ -16,11 +16,11 @@ We encourage students to bring their own computer whenever possible.  Although w
 
 Step 1: Download the Arduino IDE
 ------
-pre-load the [Arduino Integrated Development Environment (IDE)](http://arduino.cc/en/Main/Software).  This free software will run on Windows, Macs and Linux systems.  If you are familiar with the Eclipse this is a version of Eclipse that have been extensivly customized for Arduinos.  The IDE comes pre-loaded with many sample programs.  If you have questions about how to use the application please see the Arduino web site.  There are also many YouTube videos that show you how the Arduino systems work.
+Please try to pre-load the [Arduino Integrated Development Environment (IDE)](http://arduino.cc/en/Main/Software).  This free software will run on Windows, Macs and Linux systems.  If you are familiar with the Eclipse this is a version of Eclipse that have been extensivly customized for Arduinos.  The IDE comes pre-loaded with many sample programs.  If you have questions about how to use the application please see the Arduino web site.  There are also many YouTube videos that show you how the Arduino systems work.
 
 Step 2: Download the Correct FT231 USB Driver
 ------
-Note that the SparkFun kits do NOT use standard Arduino boards.  They use [SparkFun RedBoard](https://www.sparkfun.com/products/12757) manufactured by SparkFun.  These boards us the same processor as standard Ardunios, however they use *different* USB interface chips and therefor will need a different USB driver.  If you bring your own laptop, please make sure that you load the USB drivers for the FTDI FT231X before you come.  You can get the [FTDI FT231X drivers here](http://www.ftdichip.com/Drivers/VCP.htm).  Note that you will not be able to test this step until you get into the lab.  When you do connect the RedBoard to your computer via the USB you should see the the driver in the Windows device Manager.
+Note that the SparkFun kits do NOT use standard Arduino boards.  They use [SparkFun RedBoard](https://www.sparkfun.com/products/12757) manufactured by SparkFun.  These boards us the same processor as standard Ardunios, however they use *different* USB interface chips and therefor will need a different USB driver.  If you bring your own laptop, please make sure that you load the USB drivers for the FTDI FT231X before you come.  You can get the [FTDI FT231X drivers here](http://www.ftdichip.com/Drivers/VCP.htm).  Note that you will not be able to test this step until you get into the lab.  When you do connect the RedBoard to your computer via the USB cable you should see the the working driver under USB in the Windows Device Manager Program.  If you see errors you will not be able to download new programs to the RedBoard.
 
 Step 3: Download the SparkFun Inventors Kit Examples
 ------
@@ -40,4 +40,4 @@ We also would like you to pre-load the the [SparkFun Inventors Kit Code Examples
 
 Advanced Labs
 =======
-You are limited by the labs in the SparkFun inventors kit.  Feel free to bring your own sensors and displays and the mentors will work with you to figure out how to use them.
+You are not limited by the labs in the SparkFun inventors kit.  Feel free to bring your own sensors and displays. Learning how to use the popular WS2811 addressible LED strips (NeoPixels) is a great example of a fun lab.  The mentors will work with you to figure out how to use them.

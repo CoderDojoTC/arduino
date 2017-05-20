@@ -50,9 +50,14 @@ We can usually find libraries for most devices and help you integrte these devic
 
 There are two additional sites that we are using to teach computer science concepts that go beyond the SparkFun Inventor Labs:
 
-   .1 [Moving Rainbow Labs](http://moving-rainbow.readthedocs.io/en/latest/README/) this labs focus on using low-cost colorful displays such as the 
+## Moving Rainbow Labs
+
+[Moving Rainbow Labs](http://moving-rainbow.readthedocs.io/en/latest/README/) these labs focus on using low-cost colorful displays such as the 
 popular (WS2811B) addressible LED strips (NeoPixels) is a great example of a fun labs that can be used to create programmable wearable devices.
-   .1 [CoderDojo Robots](https://dmccreary.gitbooks.io/coderdojo-robots/content/)
+
+## CoderDojo Robots
+[CoderDojo Robots](https://dmccreary.gitbooks.io/coderdojo-robots/content/) these labs begin with learning how to make motors move forward and backward.
+Students can then build simple collision avoidance robots.
 
 The mentors will work with you to take you in whatever direction you want to go.
 We have students that have created projects using LEDs, motors, sound and music.

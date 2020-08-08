@@ -1,0 +1,47 @@
+site_name: 'CoderDojo TC Arduino'
+nav:
+  - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
+  - Arduino Online with Tinkercad:
+    - Introduction: tinkercad/00-introduction.md
+    - Trinket Account: trinket/01-turtle-graphics.md
+  - Beginning Arduino :
+    - Blink: beginning/01-blink.md
+    - Two LEDs: beginning/02-two-leds.md
+    - RGB LEDs: beginning/03-rgb-led.md
+    - Photoresistor: beginning/04-photoresistor.md
+    - Servo: beginning/05-servo.md
+  - Arduino LED Strip:
+    - Introduction: led-strip-introd.md
+    - Blink: led-strip/01-blink.md
+    - Move: led-strip/02-move.md
+  - Arduino Display:
+    - Introduction: display/00-intro.md
+  - Contributing: contribute.md
+  - Contact: contact.md
+
+site_description: 'Resources for teaching Arduino to CoderDojo Twin Cities students.'
+site_author: 'Dan McCreary'
+repo_name: 'arduino'
+repo_url: 'https://github.com/CoderDojoTC/arduino'
+edit_uri: 'blob/master/docs'
+theme:
+  name: material
+  logo: img/coderdojo-logo.png
+  palette:
+    primary: '#642580'
+    accent: '#41BAC1'
+  feature:
+    tabs: true
+  custom_dir: 'theme'
+  include_sidebar: true
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - codehilite:
+      linenums: true
+plugins:
+    - search
+markdown_extensions:
+  - codehilite

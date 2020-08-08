@@ -1,9 +1,11 @@
 site_name: 'CoderDojo TC Arduino'
 nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
+  - Introduction: introduction.md
   - Arduino Online with Tinkercad:
     - Introduction: tinkercad/00-introduction.md
-    - Trinket Account: trinket/01-turtle-graphics.md
+    - Trinket Account: tinkercad/01-setup.md
+    - Blink: tinkercad/02-blink.md
   - Beginning Arduino :
     - Blink: beginning/01-blink.md
     - Two LEDs: beginning/02-two-leds.md

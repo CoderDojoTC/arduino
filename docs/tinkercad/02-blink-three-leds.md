@@ -1,4 +1,4 @@
-# Arduino Blink Three LEDs Lab
+# Arduino Blink Three LEDs
 
 In this lab, we will learn how to make three LEDs of different color blink on and off.  We will be replicating the same blink circuit in the prior lab for a red, a green and a blue LED.
 
@@ -88,21 +88,9 @@ You can type this into the Tinkercad program or do a copy here and paste it into
 
 ## Working example on Tinkercad
 
-[Blink Three LEDs](https://www.tinkercad.com/things/2akE4amGGae-blink-three-leds)
+[Blink Three LEDs](https://www.tinkercad.com/things/2akE4amGGae)
 
 ## Experiments
 
-1. What happens if you change the delay times (currently set at 1000) to be 100?
-2. What happens if you change the delay times to be 50?
-3. What happens if you change the delay times to be 20?
-4. What happens if you change the delay times to be 10?  Can you still see the blinking at all?
-
-
-## Food for thought
-Most movies are shown around shown at 24 frames per second?  Why do you think they picked this speed?
-
-If you hook up a photo sensor to a florescent light bulb you will see that it flickers 120 times per second.  Household current runs at half this rate (60 times per second).  Why do you think that the light flicker rate is twice the frequency?  Hint: draw a wave that goes positive and negative.  Look up [Sine Wave](https://en.wikipedia.org/wiki/Sine_wave) in Wikipedia.
-
-What did you learn about the human eye?
-
-If you would like to learn more about LED circuits here is a [Wikipedia Article on LED Circuits](https://en.wikipedia.org/wiki/LED_circuit)
+1. When the first LED turns off there is a pause of one second before the second gree LED turns on.  How would you change the loop() function so that immediately after the first red LED goes off the second green LED goes on?
+2. How many places in the program do you have to change to make pattern speed up or slow down?  Could you use a variable to allow you to make a change at a single location in the program to adjust the speed?

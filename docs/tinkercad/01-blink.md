@@ -7,8 +7,8 @@ entering code into the system before you can run the example.
 
 ## LED Connections
 The LED has two connectors on it.  But you should never connect both the wires directly to power.  That will burn out the LED.  The LED has a negative side (called the Cathode) and a positive site (called the Anode).  It is important that you always put a proper
-resistor in the path of the circut to limit the current.  In the case of a standard 5 volt Arduino we will use a
-330 ohm resistor to limit the current to the LED.
+resistor in the path of the circuit to limit the current.  In the case of a standard 5 volt Arduino we will use a
+330-ohm resistor to limit the current to the LED.
 
 It is important that you don't confuse these two sides.  If you don't hook them up correctly your circuit will not work!
 
@@ -40,7 +40,6 @@ Go to the left navigation area and click the Circuits and press the green Create
 ### Step 2: Add an Arduino Uno
 Go to the right search area and type in "Arduino".  You should see the following image:
 
-
 ![Arduino Search](./img/01-search-arduino.png)
 
 Now clink on the image and use your mouse to drag the icon of the Arduino to the main central area of your screen.
@@ -51,8 +50,11 @@ Now go back to the right-side search area and enter "LED". You should see an ima
 
 ![LED Search](./img/01-led.png)
 
+Note that in this diagram, the straight wire on the left is the cathode which goes to GND pin on the Arduino. The bent pin on the right is anode which goes through a resistor and then to a digital output pin.
+
 ### Step 4: Add the Resistor and Set it to be 330 ohms
 Finally, we will also add a resistor to our circuit.  Go to the right side, type in "resistor" and you should see an image like this:
+
 ![Add Resistor](./img/01-resistor.png)
 
 Unlike the LED, the resistor is just a generic component but we must next set the value of the resistor to be 330 ohms.  We do this

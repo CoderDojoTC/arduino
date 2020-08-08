@@ -1,0 +1,988 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for teaching Arduino to CoderDojo Twin Cities students.">
+      
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Blink - CoderDojo TC Arduino</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#arduino-blink-lab" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="CoderDojo TC Arduino" class="md-header-nav__button md-logo" aria-label="CoderDojo TC Arduino">
+      
+  <img src="../../img/coderdojo-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            CoderDojo TC Arduino
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Blink
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/CoderDojoTC/arduino/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arduino
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CoderDojo TC Arduino" class="md-nav__button md-logo" aria-label="CoderDojo TC Arduino">
+      
+  <img src="../../img/coderdojo-logo.png" alt="logo">
+
+    </a>
+    CoderDojo TC Arduino
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/CoderDojoTC/arduino/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arduino
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://coderdojotc.github.io/CoderDojoTC/" title="CoderDojo TC" class="md-nav__link">
+      CoderDojo TC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Arduino Online with Tinkercad
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Arduino Online with Tinkercad" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Arduino Online with Tinkercad
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../00-introduction.md" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01-setup.md" title="Trinket Account" class="md-nav__link">
+      Trinket Account
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Blink
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Blink" class="md-nav__link md-nav__link--active">
+      Blink
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#led-connections" class="md-nav__link">
+    LED Connections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remembering-cathode-and-anode" class="md-nav__link">
+    Remembering Cathode and Anode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit-diagram" class="md-nav__link">
+    Circuit Diagram
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-circuit" class="md-nav__link">
+    Step 1: Create a New Circuit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-an-arduino-uno" class="md-nav__link">
+    Step 2: Add an Arduino Uno
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-the-led-and-the-resistor" class="md-nav__link">
+    Step 3: Add the LED and the resistor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-add-the-resistor-and-set-it-to-be-330-ohms" class="md-nav__link">
+    Step 4: Add the Resistor and Set it to be 330 ohms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-make-the-connections" class="md-nav__link">
+    Step 5: Make the connections
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-setup-function" class="md-nav__link">
+    The Setup Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-loop-function" class="md-nav__link">
+    The Loop Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-full-program" class="md-nav__link">
+    The Full Program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-example-on-tinkercad" class="md-nav__link">
+    Working example on Tinkercad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food-for-thought" class="md-nav__link">
+    Food for thought
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Beginning Arduino
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Beginning Arduino" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Beginning Arduino
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../beginning/01-blink.md" title="Blink" class="md-nav__link">
+      Blink
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../beginning/02-two-leds.md" title="Two LEDs" class="md-nav__link">
+      Two LEDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../beginning/03-rgb-led.md" title="RGB LEDs" class="md-nav__link">
+      RGB LEDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../beginning/04-photoresistor.md" title="Photoresistor" class="md-nav__link">
+      Photoresistor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../beginning/05-servo.md" title="Servo" class="md-nav__link">
+      Servo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Arduino LED Strip
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Arduino LED Strip" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Arduino LED Strip
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../led-strip-introd.md" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../led-strip/01-blink.md" title="Blink" class="md-nav__link">
+      Blink
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../led-strip/02-move.md" title="Move" class="md-nav__link">
+      Move
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Arduino Display
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Arduino Display" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Arduino Display
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../display/00-intro.md" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contribute.md" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contact.md" title="Contact" class="md-nav__link">
+      Contact
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#led-connections" class="md-nav__link">
+    LED Connections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remembering-cathode-and-anode" class="md-nav__link">
+    Remembering Cathode and Anode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit-diagram" class="md-nav__link">
+    Circuit Diagram
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-circuit" class="md-nav__link">
+    Step 1: Create a New Circuit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-an-arduino-uno" class="md-nav__link">
+    Step 2: Add an Arduino Uno
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-the-led-and-the-resistor" class="md-nav__link">
+    Step 3: Add the LED and the resistor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-add-the-resistor-and-set-it-to-be-330-ohms" class="md-nav__link">
+    Step 4: Add the Resistor and Set it to be 330 ohms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-make-the-connections" class="md-nav__link">
+    Step 5: Make the connections
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-setup-function" class="md-nav__link">
+    The Setup Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-loop-function" class="md-nav__link">
+    The Loop Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-full-program" class="md-nav__link">
+    The Full Program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-example-on-tinkercad" class="md-nav__link">
+    Working example on Tinkercad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food-for-thought" class="md-nav__link">
+    Food for thought
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/CoderDojoTC/arduino/blob/master/docs/tinkercad/02-blink.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="arduino-blink-lab">Arduino Blink Lab</h1>
+<p>In this lab, we will learn how to make a Light Emitting Diode (LED) turn on and off at various speeds.
+The Blink lab is kind of like "Hello world!" in Arduino: it is the first program most students learn.
+Getting blink working is not always easy.  You will need to become familiar with using Tinkercad and
+entering code into the system before you can run the example.</p>
+<h2 id="led-connections">LED Connections</h2>
+<p>The LED has two connectors on it.  But you should never connect both the wires directly to power.  That will burn out the LED.  The LED has a negative side (called the Cathode) and a positive site (called the Anode).  It is important that you always put a proper
+resistor in the path of the circut to limit the current.  In the case of a standard 5 volt Arduino we will use a
+330 ohm resistor to limit the current to the LED.</p>
+<p>It is important that you don't confuse these two sides.  If you don't hook them up correctly your circuit will not work!</p>
+<p>Here is a picture of the cathode and anode of an LED.</p>
+<p><img alt="LED Cathode and Anode" src="../img/01-led-cathode-anode.png" /></p>
+<h2 id="remembering-cathode-and-anode">Remembering Cathode and Anode</h2>
+<p>Sometimes you can use a picture to help you remember which end is the cathode and which one is the anode.  I try to think of a short black "cat" to remember the negative cathode.  I also try to think of my friend Ann who is tall and loves red when I think of the Anode.  Here is a picture that you can use to remember this idea:
+<img alt="Remembering Cathode and Anode" src="../img/01-cat-and-ann.png" /></p>
+<p>Sometimes it is hard to remember which side is which.  You </p>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<p>Here is the circuit diagram we will use for our blink lab.</p>
+<p>You can create this using the following steps:</p>
+<h3 id="step-1-create-a-new-circuit">Step 1: Create a New Circuit</h3>
+<p>Go to the left navigation area and click the Circuits and press the green Create New Circuit button:</p>
+<p><img alt="left nav" src="../img/01-left-nav.png" /><img alt="Create New Circuit" src="../img/01-create-circuit.png" /></p>
+<h3 id="step-2-add-an-arduino-uno">Step 2: Add an Arduino Uno</h3>
+<p>Go to the right search area and type in "Arduino".  You should see the following image:</p>
+<p><img alt="Arduino Search" src="../img/01-search-arduino.png" /></p>
+<p>Now clink on the image and use your mouse to drag the icon of the Arduino to the main central area of your screen.</p>
+<h3 id="step-3-add-the-led-and-the-resistor">Step 3: Add the LED and the resistor</h3>
+<p>Now go back to the right-side search area and enter "LED". You should see an image like this:</p>
+<p><img alt="LED Search" src="../img/01-led.png" /></p>
+<h3 id="step-4-add-the-resistor-and-set-it-to-be-330-ohms">Step 4: Add the Resistor and Set it to be 330 ohms</h3>
+<p>Finally, we will also add a resistor to our circuit.  Go to the right side, type in "resistor" and you should see an image like this:
+<img alt="Add Resistor" src="../img/01-resistor.png" /></p>
+<p>Unlike the LED, the resistor is just a generic component but we must next set the value of the resistor to be 330 ohms.  We do this
+by clicking directly on the resistor in the circut diagram and changing the value in the inspector region of the screen:</p>
+<p><img alt="Set Resistor Value" src="../img/01-set-resistor.png" /></p>
+<h3 id="step-5-make-the-connections">Step 5: Make the connections</h3>
+<p>Now we have our three components on the screen.  We are ready to hook them up.  First, lets connect the left side of the LED (the cathode) to the
+GND or ground negative pin of the Arduino. Once you have the wire connected you can select it and you will be able to change the color.  My convention, any wire that go to GND are typically colord black.</p>
+<p><img alt="Connect LED to GND" src="../img/01-connect-led-gnd.png" /></p>
+<p>Now drag the 330 ohm resistor so it connect to the right pin of the LED and then add 
+<img alt="Connect LED Resistor and to 13" src="../img/01-connect-led-resistor-13.png" /></p>
+<p>Your circuit should look like the following diagram:
+<img alt="Blink Circuit diagram" src="../img/blink.png" /></p>
+<h2 id="code">Code</h2>
+<p>Almost all Arduino programs have two main functions:</p>
+<ol>
+<li>A <strong>setup</strong> function that runs once when the Aruduino powers up</li>
+<li>A <strong>loop</strong> function that runs continually until the power is turned off (or the reset is triggered)</li>
+</ol>
+<h3 id="the-setup-function">The Setup Function</h3>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>In our blink program the setup function just sets pin 13 as an output pin.  That is pretty simple.  You will notice that
+the word <strong>setup</strong> is followed by an open and a closed parenthesis.  This is to indicate that there are no
+parameters going into the function.</p>
+<h3 id="the-loop-function">The Loop Function</h3>
+<p>The loom function will do four functions</p>
+<ol>
+<li>Turn the voltage of pin 13 HIGH (+5 volts)</li>
+<li>Wait one second (1000 milliseconds) using the delay function</li>
+<li>Turn the voltage of pin 13 LOW (ground or 0 volts)</li>
+<li>Wait one second again</li>
+</ol>
+<p>It repeats the on/off every second continually until the power is turned off.</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">// Wait for 1000 millisecond(s)</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<h3 id="the-full-program">The Full Program</h3>
+<p>Here is the full program:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">// Wait for 1000 millisecond(s)</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>You can type this into the Tinkercad program or do a copy here and paste it into the code area.</p>
+<h2 id="working-example-on-tinkercad">Working example on Tinkercad</h2>
+<p><a href="https://www.tinkercad.com/things/f3seilzyLGu-blink">Blink on Tinkercad</a></p>
+<h2 id="experiments">Experiments</h2>
+<ol>
+<li>What happens if you change the delay times (currently set at 1000) to be 100?</li>
+<li>What happens if you change the delay times to be 50?</li>
+<li>What happens if you change the delay times to be 20?</li>
+<li>What happens if you change the delay times to be 10?  Can you still see the blinking at all?</li>
+</ol>
+<h2 id="food-for-thought">Food for thought</h2>
+<p>Most movies are shown around shown at 24 frames per second?  Why do you think they picked this speed?</p>
+<p>If you hook up a photo sensor to a florescent light bulb you will see that it flickers 120 times per second.  Household current runs at half this rate (60 times per second).  Why do you think that the light flicker rate is twice the frequency?  Hint: draw a wave that goes positive and negative.  Look up <a href="https://en.wikipedia.org/wiki/Sine_wave">Sine Wave</a> in Wikipedia.</p>
+<p>What did you learn about the human eye?</p>
+<p>If you would like to learn more about LED circuits here is a <a href="https://en.wikipedia.org/wiki/LED_circuit">Wikipedia Article on LED Circuits</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+  <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../../introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Introduction
+                </span>
+              </div>
+            </a>
+          
+          
+        </nav>
+      </div>
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          
+            built with the <a href="http://microsite.optum.com">Micro-Site Builder</a>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

@@ -6,6 +6,7 @@ nav:
     - Introduction: tinkercad/00-introduction.md
     - Trinket Account: tinkercad/01-setup.md
     - Blink: tinkercad/02-blink.md
+    - Two LEDs: tinkercad/03-two-leds.md
   - Beginning Arduino :
     - Blink: beginning/01-blink.md
     - Two LEDs: beginning/02-two-leds.md

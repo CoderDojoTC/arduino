@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.1">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.71dfd922.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
       
       
         
@@ -55,7 +55,6 @@
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
   
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -239,7 +238,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../00-introduction.md" title="Introduction" class="md-nav__link">
+    <a href="../00-intro/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -418,6 +417,30 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02-blink-three-leds/" title="Blink Three LEDs" class="md-nav__link">
+      Blink Three LEDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-change-blink-speed/" title="Use Pot to Change Blink Speed" class="md-nav__link">
+      Use Pot to Change Blink Speed
+    </a>
   </li>
 
         
@@ -802,7 +825,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/arduino/blob/master/docs/tinkercad/02-blink.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/arduino/blob/master/docs/tinkercad/01-blink.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -817,8 +840,8 @@ Getting blink working is not always easy.  You will need to become familiar with
 entering code into the system before you can run the example.</p>
 <h2 id="led-connections">LED Connections</h2>
 <p>The LED has two connectors on it.  But you should never connect both the wires directly to power.  That will burn out the LED.  The LED has a negative side (called the Cathode) and a positive site (called the Anode).  It is important that you always put a proper
-resistor in the path of the circut to limit the current.  In the case of a standard 5 volt Arduino we will use a
-330 ohm resistor to limit the current to the LED.</p>
+resistor in the path of the circuit to limit the current.  In the case of a standard 5 volt Arduino we will use a
+330-ohm resistor to limit the current to the LED.</p>
 <p>It is important that you don't confuse these two sides.  If you don't hook them up correctly your circuit will not work!</p>
 <p>Here is a picture of the cathode and anode of an LED.</p>
 <p><img alt="LED Cathode and Anode" src="../img/01-led-cathode-anode.png" /></p>
@@ -839,9 +862,10 @@ resistor in the path of the circut to limit the current.  In the case of a stand
 <h3 id="step-3-add-the-led-and-the-resistor">Step 3: Add the LED and the resistor</h3>
 <p>Now go back to the right-side search area and enter "LED". You should see an image like this:</p>
 <p><img alt="LED Search" src="../img/01-led.png" /></p>
+<p>Note that in this diagram, the straight wire on the left is the cathode which goes to GND pin on the Arduino. The bent pin on the right is anode which goes through a resistor and then to a digital output pin.</p>
 <h3 id="step-4-add-the-resistor-and-set-it-to-be-330-ohms">Step 4: Add the Resistor and Set it to be 330 ohms</h3>
-<p>Finally, we will also add a resistor to our circuit.  Go to the right side, type in "resistor" and you should see an image like this:
-<img alt="Add Resistor" src="../img/01-resistor.png" /></p>
+<p>Finally, we will also add a resistor to our circuit.  Go to the right side, type in "resistor" and you should see an image like this:</p>
+<p><img alt="Add Resistor" src="../img/01-resistor.png" /></p>
 <p>Unlike the LED, the resistor is just a generic component but we must next set the value of the resistor to be 330 ohms.  We do this
 by clicking directly on the resistor in the circut diagram and changing the value in the inspector region of the screen:</p>
 <p><img alt="Set Resistor Value" src="../img/01-set-resistor.png" /></p>
@@ -939,7 +963,7 @@ parameters going into the function.</p>
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../../introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../00-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -953,6 +977,20 @@ parameters going into the function.</p>
               </div>
             </a>
           
+          
+            <a href="../02-blink-three-leds/" title="Blink Three LEDs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Blink Three LEDs
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
           
         </nav>
       </div>
@@ -971,14 +1009,14 @@ parameters going into the function.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

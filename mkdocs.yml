@@ -2,9 +2,10 @@ site_name: 'CoderDojo TC Arduino'
 nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Introduction: introduction.md
+
   - Arduino Online with Tinkercad:
     - Introduction: tinkercad/00-intro.md
-    - Trinket Account: tinkercad/01-setup.md
+    - Tinkercad Account: tinkercad/00-tinkercad-account-setup.md
     - Blink: tinkercad/01-blink.md
     - Blink Three LEDs: tinkercad/02-blink-three-leds.md
     - Use Pot to Change Blink Speed: tinkercad/03-change-blink-speed.md
@@ -15,12 +16,17 @@ nav:
     - RGB LEDs: beginning/03-rgb-led.md
     - Photoresistor: beginning/04-photoresistor.md
     - Servo: beginning/05-servo.md
+
   - Arduino LED Strip:
-    - Introduction: led-strip-introd.md
-    - Blink: led-strip/01-blink.md
-    - Move: led-strip/02-move.md
+    - Introduction: tinkercad-neopixel/00-intro.md
+    - Blink: tinkercad-neopixel/01-blink.md
+    - Move: tinkercad-neopixel/02-move.md
+    - Back and Forth: tinkercad-neopixel/03-back-and-forth.md
+    - RGB Back and Forth: tinkercad-neopixel/04-rgb-back-and-forth.md
+
   - Arduino Display:
     - Introduction: display/00-intro.md
+
   - Contributing: contribute.md
   - Contact: contact.md
 

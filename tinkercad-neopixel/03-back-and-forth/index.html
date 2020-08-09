@@ -19,7 +19,7 @@
     
     
       
-        <title>Blink - CoderDojo TC Arduino</title>
+        <title>Back and Forth - CoderDojo TC Arduino</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#neopixel-blink" class="md-skip">
+        <a href="#neopixel-back-and-forth" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Blink
+              Back and Forth
             
           </span>
         </div>
@@ -428,6 +428,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../01-blink/" title="Blink" class="md-nav__link">
+      Blink
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02-move/" title="Move" class="md-nav__link">
+      Move
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -439,14 +463,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Blink
+        Back and Forth
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="Blink" class="md-nav__link md-nav__link--active">
-      Blink
+    <a href="./" title="Back and Forth" class="md-nav__link md-nav__link--active">
+      Back and Forth
     </a>
     
       
@@ -476,33 +500,6 @@
     Code
   </a>
   
-    <nav class="md-nav" aria-label="Code">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#preamble" class="md-nav__link">
-    Preamble
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#main-loop" class="md-nav__link">
-    Main Loop
-  </a>
-  
 </li>
       
         <li class="md-nav__item">
@@ -523,30 +520,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../02-move/" title="Move" class="md-nav__link">
-      Move
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../03-back-and-forth/" title="Back and Forth" class="md-nav__link">
-      Back and Forth
-    </a>
   </li>
 
         
@@ -670,33 +643,6 @@
     Code
   </a>
   
-    <nav class="md-nav" aria-label="Code">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#preamble" class="md-nav__link">
-    Preamble
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#main-loop" class="md-nav__link">
-    Main Loop
-  </a>
-  
 </li>
       
         <li class="md-nav__item">
@@ -725,7 +671,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/arduino/blob/master/docs/tinkercad-neopixel/01-blink.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/arduino/blob/master/docs/tinkercad-neopixel/03-back-and-forth.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -733,69 +679,49 @@
                   
                 
                 
-                <h1 id="neopixel-blink">Neopixel Blink</h1>
-<p>In this lab, our goal is to duplicate the functionality of the classic single LED blink lab.  We will only make the first pixel of a NeoPixel strip turn the red LED on and off.</p>
+                <h1 id="neopixel-back-and-forth">Neopixel Back and Forth</h1>
+<p>In this lab, our goal is to make a single-pixel move down the LED strip and then go back.</p>
 <h2 id="circuit">Circuit</h2>
 <p><img alt="Tinkercad Circuit" src="../img/led-strip-circuit.png" /></p>
 <h2 id="code">Code</h2>
-<h3 id="preamble">Preamble</h3>
 <div class="codehilite"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;Adafruit_NeoPixel.h&gt;</span><span class="cp"></span>
 <span class="cp">#define PIN 2</span>
 <span class="cp">#define NUMPIXELS 12</span>
 <span class="n">Adafruit_NeoPixel</span> <span class="n">pixels</span> <span class="o">=</span> <span class="n">Adafruit_NeoPixel</span><span class="p">(</span><span class="n">NUMPIXELS</span><span class="p">,</span> <span class="n">PIN</span><span class="p">,</span> <span class="n">NEO_GRB</span> <span class="o">+</span> <span class="n">NEO_KHZ800</span><span class="p">);</span>
-</code></pre></div>
 
-
-<h3 id="setup">Setup</h3>
-<p>In our setup function we need to initialize the NeoPixel data structure.  This will allocate enough memory to store the state of the pixels.  We will need to allocate enough RAM to store an eight-bit (one byte) value for each red, green and blue light intensity level for each of our pixels.</p>
-<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
-<span class="p">}</span>
-</code></pre></div>
-
-
-<h2 id="main-loop">Main Loop</h2>
-<p>Our main loop will do the following steps:</p>
-<ol>
-<li>It will set the red value of the first pixel (pixel 0) to be its full brightness: 255.</li>
-<li>It will then send this value to the LED strip using the <strong>pixels.show())</strong></li>
-<li>It will then pause a half-second or 500 milliseconds using the <strong>delay(500)</strong> function.</li>
-<li>It will then et the red value of the first pixel (pixel 0) to be off a value of 0.</li>
-<li>It will then pause for another half-second.</li>
-</ol>
-<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="cp">### Full Code</span>
-<span class="err">```</span><span class="n">C</span>
-<span class="cp">#include</span> <span class="cpf">&lt;Adafruit_NeoPixel.h&gt;</span><span class="cp"></span>
-<span class="cp">#define PIN 2</span>
-<span class="cp">#define NUMPIXELS 12</span>
-<span class="n">Adafruit_NeoPixel</span> <span class="n">pixels</span> <span class="o">=</span> <span class="n">Adafruit_NeoPixel</span><span class="p">(</span><span class="n">NUMPIXELS</span><span class="p">,</span> <span class="n">PIN</span><span class="p">,</span> <span class="n">NEO_GRB</span> <span class="o">+</span> <span class="n">NEO_KHZ800</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">delay_time</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span> <span class="c1">// 200 msec = 1/5th of a second</span>
 
 <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">pixels</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+
+  <span class="c1">// from left to right</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">NUMPIXELS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="n">delay</span><span class="p">(</span><span class="n">delay_time</span><span class="p">);</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="c1">// from right to left</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">NUMPIXELS</span><span class="p">;</span> <span class="n">i</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">){</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="n">delay</span><span class="p">(</span><span class="n">delay_time</span><span class="p">);</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">pixels</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+  <span class="p">}</span>
+
+
 <span class="p">}</span>
 </code></pre></div>
 
 
 <h2 id="link-working-example">Link Working Example</h2>
-<p>https://www.tinkercad.com/things/9N27JUfFSCe</p>
+<p><a href="https://www.tinkercad.com/things/izRFzjwAONe">Link to Working Program on Tinkercad</a></p>
 <h2 id="experiments">Experiments</h2>
                 
               
@@ -815,7 +741,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../00-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../02-move/" title="Move" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -824,19 +750,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Introduction
+                  Move
                 </span>
               </div>
             </a>
           
           
-            <a href="../02-move/" title="Move" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../04-rgb-back-and-forth/" title="RGB Back and Forth" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Move
+                  RGB Back and Forth
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

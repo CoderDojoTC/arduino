@@ -19,7 +19,7 @@
     
     
       
-        <title>00 intro - CoderDojo TC Arduino</title>
+        <title>Introduction - CoderDojo TC Arduino</title>
       
     
     
@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#coderdojo-twin-cities-neopixel-project" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              00 intro
+              Introduction
             
           </span>
         </div>
@@ -243,8 +248,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tinkercad/01-setup.md" title="Trinket Account" class="md-nav__link">
-      Trinket Account
+    <a href="../../tinkercad/00-tinkercad-account-setup/" title="Tinkercad Account" class="md-nav__link">
+      Tinkercad Account
     </a>
   </li>
 
@@ -384,10 +389,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Arduino LED Strip
@@ -409,11 +416,74 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../led-strip-introd.md" title="Introduction" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Introduction
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Introduction" class="md-nav__link md-nav__link--active">
       Introduction
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blink-an-led" class="md-nav__link">
+    Blink an LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-the-led" class="md-nav__link">
+    Move the LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-the-led-forward-and-back" class="md-nav__link">
+    Move the LED forward and back
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-the-colors-of-the-led" class="md-nav__link">
+    Change the colors of the LED
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -423,7 +493,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../led-strip/01-blink.md" title="Blink" class="md-nav__link">
+    <a href="../01-blink/" title="Blink" class="md-nav__link">
       Blink
     </a>
   </li>
@@ -435,8 +505,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../led-strip/02-move.md" title="Move" class="md-nav__link">
+    <a href="../02-move/" title="Move" class="md-nav__link">
       Move
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-back-and-forth/" title="Back and Forth" class="md-nav__link">
+      Back and Forth
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-rgb-back-and-forth/" title="RGB Back and Forth" class="md-nav__link">
+      RGB Back and Forth
     </a>
   </li>
 
@@ -519,6 +613,59 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blink-an-led" class="md-nav__link">
+    Blink an LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-the-led" class="md-nav__link">
+    Move the LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-the-led-forward-and-back" class="md-nav__link">
+    Move the LED forward and back
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-the-colors-of-the-led" class="md-nav__link">
+    Change the colors of the LED
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -532,9 +679,15 @@
                   
                 
                 
-                  <h1>00 intro</h1>
-                
-                <p>00-intro.md</p>
+                <h1 id="coderdojo-twin-cities-neopixel-project">CoderDojo Twin Cities NeoPixel Project</h1>
+<p>Every year since 2014, the local Twin Cities hosts a full-day hackathon designed to get kids interested in coding and STEM concepts.  One of our most successful projects has been our LED costume contest.  At these events, we purchase Arduinos, breadboards and LED strips for our students.  The come to the events at around 10am and by 2pm many of them have learned how to program their LEDs to power their costumes in a variety of different patterns.</p>
+<p>During the COVID pandemic we are moving this event to be online so that everyone can still learn to program the LED strips even though they don't have the physical devices.</p>
+<p>For each of our labs, we now have a working Tinkercad version that you can use online.</p>
+<p>Here is a list of our labs.</p>
+<h2 id="blink-an-led">Blink an LED</h2>
+<h2 id="move-the-led">Move the LED</h2>
+<h2 id="move-the-led-forward-and-back">Move the LED forward and back</h2>
+<h2 id="change-the-colors-of-the-led">Change the colors of the LED</h2>
                 
               
               
@@ -549,6 +702,41 @@
       
         
   <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../../tinkercad/03-change-blink-speed/" title="Use Pot to Change Blink Speed" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Use Pot to Change Blink Speed
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../01-blink/" title="Blink" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Blink
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">

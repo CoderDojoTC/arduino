@@ -8,6 +8,9 @@ For each of our labs, we now have a working Tinkercad version that you can use o
 Here is a list of our labs.
 
 ## Blink an LED
+A simple lab to get started.  Students have to build a simple circuit using Tinkercad using and Arduino, an LED strip and three wires.  They then have to write a short Arduino program to make the first LED blink red.
+
+[Link to Lab 1: Tinkercad Neopixel LED Strip Blink Lab](./01-blink.md)
 
 ## Move the LED
 

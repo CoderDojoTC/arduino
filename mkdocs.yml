@@ -3,30 +3,33 @@ nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Introduction: introduction.md
 
-  - Arduino Online with Tinkercad:
+  - Beginning Arduino Online with Tinkercad:
     - Introduction: tinkercad/00-intro.md
     - Tinkercad Account: tinkercad/00-tinkercad-account-setup.md
     - Blink: tinkercad/01-blink.md
     - Blink Three LEDs: tinkercad/02-blink-three-leds.md
     - Use Pot to Change Blink Speed: tinkercad/03-change-blink-speed.md
 
-  - Beginning Arduino :
-    - Blink: beginning/01-blink.md
-    - Two LEDs: beginning/02-two-leds.md
-    - RGB LEDs: beginning/03-rgb-led.md
-    - Photoresistor: beginning/04-photoresistor.md
-    - Servo: beginning/05-servo.md
+  - Beginning Arduino (Nano Version):
+    - Blink: nano/01-blink.md
+    - Three LEDs: nano/02-three-leds.md
+    - Blink Speed Pot: nano/03-blink-speed-pot.md
+    - RGB LEDs: nano/04-rgb-leds.md
+    - Ping: nano/05-ping.md
+    - Photoresistor: nano/06-photoresistor.md
+    - Servo: nano/07-servo.md
 
-  - Arduino LED Strip:
+  - Arduino LED Strip with Tinkercad:
     - Introduction: tinkercad-neopixel/00-intro.md
     - Blink: tinkercad-neopixel/01-blink.md
     - Move: tinkercad-neopixel/02-move.md
     - Back and Forth: tinkercad-neopixel/03-back-and-forth.md
-    - RGB Back and Forth: tinkercad-neopixel/04-rgb-back-and-forth.md
+    - Move Red, Green, Blue: tinkercad-neopixel/04-rgb-back-and-forth.md
 
-  - Arduino Display:
+  - Arduino Displays:
     - Introduction: display/00-intro.md
-
+    - The OLED Display: display/oled.md
+  - Instructors Guide: instructors-guide.md
   - Contributing: contribute.md
   - Contact: contact.md
 
@@ -37,7 +40,7 @@ repo_url: 'https://github.com/CoderDojoTC/arduino'
 edit_uri: 'blob/master/docs'
 theme:
   name: material
-  logo: img/coderdojo-logo.png
+  logo: ./img/coderdojo-logo.png
   palette:
     primary: '#642580'
     accent: '#41BAC1'

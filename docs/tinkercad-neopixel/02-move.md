@@ -60,3 +60,19 @@ void loop() {
 [Link to Move Lab #2 on Tinkercad](https://www.tinkercad.com/things/hxn3KTqEdqn)
 
 ## Experiments
+
+1. What happens if you change the value of the parameter in the ```delay(100)``` function in the main loop?  What happens if you change it from the new value to be 50?  What if you change it to be 200?
+2. What happens if you change the last three numbers in the first line of the for loop:
+
+From:
+
+ ```pixels.setPixelColor(i, 255, 0, 0);```
+
+ To:
+
+ ```pixels.setPixelColor(i, 0, 255, 0);```
+ 
+ Or:
+ 
+ ```pixels.setPixelColor(i, 0, 0, 255);```
+

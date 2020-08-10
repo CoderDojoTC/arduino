@@ -69,3 +69,17 @@ void loop() {
 https://www.tinkercad.com/things/9N27JUfFSCe
 
 ## Experiments
+
+1. What happens if you change the last three numbers in ```pixels.setPixelColor()``` function?:
+
+From:
+
+ ```pixels.setPixelColor(i, 255, 0, 0);```
+
+ To:
+
+ ```pixels.setPixelColor(i, 0, 255, 0);```
+ 
+ Or:
+ 
+ ```pixels.setPixelColor(i, 0, 0, 255);```

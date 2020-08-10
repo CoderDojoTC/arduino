@@ -1,8 +1,9 @@
 # CoderDojo Twin Cities Python Resources
-This GitHub repository is for sharing teaching resources to teach Python. This includes hints on getting your Python environments setup up and extensive lesson plans for serveral enviornments.
+This GitHub repository is for sharing teaching resources to teach Python. This includes hints on getting your Python environments setup up and extensive lesson plans for several environments.
 
 
-Our mentors have used several different envornments for teaching Python.  They each have pros and cons.  What our mentors like is getting new students started using a graphical programming environment such as turtle graphics libraries.  Here are some of our favorite tools:
+
+Our mentors have used several different environments for teaching Python.  They each have pros and cons.  What our mentors like is getting new students started using a graphical programming environment such as turtle graphics libraries.  Here are some of our favorite tools:
 
 - [**Trinket.io**](http://trinket.io) is an easy-to use, kid friendly web-based turtle graphics for beginners.
 - [**Jupyter Notebooks**](https://jupyter.org/) also have some support for turtle graphics.  Jupyter Notebooks can be tricky to setup for the first time, but they are the perfect on-ramp for teaching data literacy.

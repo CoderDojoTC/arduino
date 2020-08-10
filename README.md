@@ -3,13 +3,7 @@
 Welcome! This area is for students and mentors that are participating in the Twin Cities CoderDojo sessions using the Arduino. 
 Please let one of the mentors know if you have feedback that you think will help others.
 
-We are currently using the [SparkFun Inventors Kit](https://www.sparkfun.com/products/12001) to
-introduce our students to the concepts of Physical Computing: making LEDS blink, reading sensors and driving motors.
-Although you are not required to follow the SparkFun guidebook we encourage our new students to try these labs out first.
-
-One of the reasons we selected this kit is because it has an excellent free
-[Guidebook](https://cdn.sparkfun.com/datasheets/Kits/RedBoard_SIK_3.2.pdf) 
-which we encourage you to download and familiarize yourself with before you come to class.
+Our new documentation site is [here](https://github.com/CoderDojoTC/arduino/)
 
 ## Why Arduino?
 
@@ -61,3 +55,13 @@ Students can then build simple collision avoidance robots.
 
 The mentors will work with you to take you in whatever direction you want to go.
 We have students that have created projects using LEDs, motors, sound and music.
+
+## SparkFun Inventors Kit
+
+We currently have ten [SparkFun Inventors Kit](https://www.sparkfun.com/products/12001) to
+introduce our students to the concepts of Physical Computing: making LEDS blink, reading sensors, and driving motors.
+Although you are not required to follow the SparkFun guidebook we encourage our new students to try these labs out first.
+
+One of the reasons we selected this kit is because it has an excellent free
+[Guidebook](https://cdn.sparkfun.com/datasheets/Kits/RedBoard_SIK_3.2.pdf) 
+which we encourage you to download and familiarize yourself with before you come to class.

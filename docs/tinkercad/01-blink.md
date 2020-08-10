@@ -57,10 +57,11 @@ Finally, we will also add a resistor to our circuit.  Go to the right side, type
 
 ![Add Resistor](./img/01-resistor.png)
 
-Unlike the LED, the resistor is just a generic component but we must next set the value of the resistor to be 330 ohms.  We do this
-by clicking directly on the resistor in the circut diagram and changing the value in the inspector region of the screen:
+Unlike the LED, the resistor is just a generic component but we must next set the value of the resistor to be 330-ohms.  We do this
+by clicking directly on the resistor in the circuit diagram and changing the value in the inspector region of the screen:
 
 ![Set Resistor Value](./img/01-set-resistor.png)
+Note that the resistor should be set to be 220-ohms. Make sure you set both the number to be 220 and the value to be ohms (not kiloohms).
 
 ### Step 5: Make the connections
 Now we have our three components on the screen.  We are ready to hook them up.  First, lets connect the left side of the LED (the cathode) to the

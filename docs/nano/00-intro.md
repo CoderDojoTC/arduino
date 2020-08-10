@@ -10,3 +10,5 @@
 
 ### Enough Inputs and Outputs for Most Beginning Projects
 
+### Required Parts List
+

@@ -2,6 +2,8 @@
 
 ## Circuit
 
+![Nano on breadboard](./img/nano-breadboard-led.png)
+
 ## Code
 
 ### Setup

@@ -2,6 +2,7 @@ site_name: 'CoderDojo TC Arduino'
 nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Introduction: introduction.md
+  - Purchasing Guide: purchasing-guide.md
 
   - Beginning Arduino Online with Tinkercad:
     - Introduction: tinkercad/00-intro.md

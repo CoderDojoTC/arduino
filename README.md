@@ -3,7 +3,7 @@
 Welcome! This area is for students and mentors that are participating in the Twin Cities CoderDojo sessions using the Arduino. 
 Please let one of the mentors know if you have feedback that you think will help others.
 
-Our new documentation site is [here](https://github.com/CoderDojoTC/arduino/)
+Our new documentation site is [here](http://coderdojotc.github.io/arduino/)
 
 ## Why Arduino?
 

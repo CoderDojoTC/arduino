@@ -17,7 +17,7 @@ nav:
     - Blink Speed Pot: nano/03-blink-speed-pot.md
     - RGB LEDs: nano/04-rgb-leds.md
     - Ping: nano/05-ping.md
-    - Photoresistor: nano/06-photoresistor.md
+    # - Photoresistor: nano/06-photoresistor.md
     - Servo: nano/07-servo.md
 
   - Arduino LED Strip with Tinkercad:
@@ -30,6 +30,7 @@ nav:
   - Arduino Displays:
     - Introduction: display/00-intro.md
     - The OLED Display: display/oled.md
+  - Glossary: glossary.md
   - Instructors Guide: instructors-guide.md
   - Contributing: contribute.md
   - Contact: contact.md

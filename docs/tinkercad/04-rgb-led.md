@@ -158,7 +158,7 @@ You can type this into the Tinkercad program or copy this code and paste it into
 
 ## Working Example on Tinkercad
 
-[RGB LED on Tinkercad](https://www.tinkercad.com/things/jTbXltJyBlT-fantabulous-robo-kasi/editel?tenant=circuits)
+[RGB LED on Tinkercad](https://www.tinkercad.com/things/jTbXltJyBlT)
 
 
 ## Experiments

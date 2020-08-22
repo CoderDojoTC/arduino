@@ -2,17 +2,31 @@
 
 In this lab, we will learn how to make an RGB (Red-Green-Blue) LED display different colors by mixing red, green, and blue light.
 
+## Concepts
 
-## RGB LED
+### RGB LED
 
-An RGB LED is actually three small LEDs --- one red, one green and one blue --- inside a normal LED housing. The RGB LED included in this kit has all the internal LEDs share the same ground wire, so there are four legs in total. To turn one color on, ensure ground is connected, then power one of the legs just as you would a regular LED. If you turn on more than one color at a time, you will see the colors start to blend together to form a new color.
+An RGB LED is actually three small LEDs &mdash; one red, one green and one blue &mdash; inside a normal LED housing. The RGB LED included in this kit has all the internal LEDs share the same ground wire, so there are four legs in total. To turn one color on, ensure ground is connected, then power one of the legs just as you would a regular LED. If you turn on more than one color at a time, you will see the colors start to blend together to form a new color.
 
-Here is a picture of an RGB LED with the "legs" labeled.
+Just like a regular LED, an RGB LED is polarized and only allows electricity to flow in one direction. Pay close attention to the flat edge and to the different length legs. Both are indicators to help orient the LED correctly.
 
-![RGB LED diagram](./img/04-rgb-led.png)
+Here is a picture of an RGB LED with the legs labeled:
+
+![RGB LED diagram](./img/04-rgb-led-diagram.png)
 
 
-## Circuit Diagram
+### Varying Color and Brightness Using Analog Output (Pulse-Width Modulation)
+
+In Circuit 3, you learned about analog output versus digital output. Now you are going to apply this knowledge to creating different colors of varying brightness.
+
+You can use the `digitalWrite()` command to turn pins on the Arduino on (5V) or off (0V), but what if you want to output 2.5V? The Arduino doesn't have an analog output, but it is really good at switching some digital pins on and off fast enough to simulate an analog output. `analogWrite()` can output 2.5 volts by quickly switching a pin on and off so that the pin is only on 50 percent of the time (50% of 5V is 2.5V). By changing the percent of time that a pin is on, from 0 percent (always off) to 100 percent (always on), `analogWrite()` can output any voltage between 0 and 5V. This is what is known as pulse-width modulation (or PWM). By using PWM, you can create many different colors with the RGB LED.
+
+Only a few of the digital pins on the Uno and RedBoard have the circuitry needed to turn on and off fast enough for PWM. These are pins 3, 5, 6, 9, 10 and 11. Each PWM pin is marked with a ~ on the board. Remember, you can only use `analogWrite()` on these pins.
+
+![PWM pins diagram](./img/04-pwm-pins.jpg)
+
+
+### Circuit Diagram
 
 Here is the circuit diagram we will use for our lab:
 
@@ -22,20 +36,16 @@ Here is the circuit diagram we will use for our lab:
 ## Code
 
 
-### Varying Light Brightness using **analogWrite**
+### Using `analogWrite`
 
-You can use the **digitalWrite()** command to turn pins on the RedBoard on (5V) or off (0V), but what if you want to output 2.5V? The RedBoard doesn't have an Analog Output, but it is really good at switching some digital pins on and off fast enough to simulate an analog output. analogWrite() can output 2.5 volts by quickly switching a pin on and off so that the pin is only on 50 percent of the time (50% of 5V is 2.5V). By changing the percent of time that a pin is on, from 0 percent (always off) to 100 percent (always on), analogWrite() can output any voltage between 0 and 5V. This is what is known as pulse-width modulation (or PWM). By using PWM, you can create many different colors with the RGB LED.
-
-Digital (PWM~): Only a few of the pins on the RedBoard have the circuitry needed to turn on and off fast enough for PWM. These are pins 3, 5, 6, 9, 10 and 11. Each PWM pin is marked with a ~ on the board. Remember, you can only use analogWrite() on these pins.
-
-![PWM pins diagram](./img/04-pwm-pins.png)
+The `analogWrite` function outputs a voltage between 0 and 5V to a pin. The function breaks the range between 0 and 5V into 255 little steps. That means each 50 steps corresponds to an increase of about 1 volt. By varying the voltage that gets sent to the red, green, and blue pins that are connected to the legs of the RGB LED, you can create 16,777,216 different colors. That's a lot of color!
 
 
 ### Creating Your Own Simple Functions
 
 When programmers want to use a piece of code over and over again, they write a **function**. The simplest functions are just chunks of code that you give a name to. When you want to run that code, you can “call” the function by typing its name, instead of writing out all of the code. More complicated functions take and return pieces of information from the program (we call these pieces of information **parameters**). In this circuit, you'll write functions to turn the RGB LED different colors by just typing that color's name.
 
-Here is the function that turns the RBG LED red:
+Here is a function that turns the RBG LED red:
 
 ```C
 void red ()
@@ -45,6 +55,7 @@ void red ()
   analogWrite(BluePin, 0);
 }
 ```
+
 
 ### The Full Program
 
@@ -141,23 +152,24 @@ void turnOff () {
   analogWrite(BluePin, 0);
 }
 ```
-You can type this into the Tinkercad program or do a copy here and paste it into the code area.
+
+You can type this into the Tinkercad program or copy this code and paste it into the Tinkercad code area.
 
 
-## Working example on Tinkercad
+## Working Example on Tinkercad
 
-[Blink on Tinkercad](https://www.tinkercad.com/things/f3seilzyLGu-blink)
+[RGB LED on Tinkercad](https://www.tinkercad.com/things/jTbXltJyBlT-fantabulous-robo-kasi/editel?tenant=circuits)
 
 
 ## Experiments
 
 1. Can you create your own function to turn the RGB LED a different color?
 2. Can you turn the RGB LED white?
-3. The **analogWrite** function outputs a voltage between 0 and 5V on a pin. The function breaks the range between 0 and 5V into 255 little steps. Note that we are not turning the LED on to full brightness (255) in this code so that the light is not too bright. Try changing these values and see what happens.
+3. Note that we are not turning the LED on to full brightness (255) in this code so that the light is not too bright. Try changing these values and see what happens.
 
 
-## Food for thought
+## Food for Thought
 
 Why is it that to get white light, you mix red, green, and blue in equal amounts, but mixing red, green, and blue paint will not get you white paint?
 
-If you would like to learn more about mixing light, here is a [Wikipedia Article on LED Circuits](https://en.wikipedia.org/wiki/LED_circuit)
+If you would like to learn more about mixing light, here is a [Wikipedia Article on Color Mixing](https://en.wikipedia.org/wiki/Color_mixing)

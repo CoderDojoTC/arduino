@@ -30,7 +30,7 @@ Only a few of the digital pins on the Uno and RedBoard have the circuitry needed
 
 Here is the circuit diagram we will use for our lab:
 
-![RGB LED circuit diagram](./img/04-rgb-led-circuit.png)
+![RGB LED circuit diagram](./img/04-rgb-led-circuit.PNG)
 
 
 ## Code

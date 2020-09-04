@@ -15,6 +15,10 @@ Make two or more LEDs blink with various patterns.  Click [here](./02-blink-thre
 Use a potentiometer to change the frequency of a flashing LED.
 Click [here](./03-change-blink-speed.md)
 
+## RGB LED
+Use an RGB LED to make all the colors of the rainbow.
+Click [here](./04-rgb-led.md)
+
 ## Ping Sensor
 Measure the distance using an ultrasonic ping sensor.  This will be very useful when we want to build a collision-avoidance robot.
 

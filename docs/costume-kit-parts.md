@@ -35,16 +35,17 @@ Here are some links from Amazon:
 | LED Strip | $11 | [BTF-LIGHTING WS2812B RGB 5050SMD Individual Addressable 3.3FT 60(2x30) Pixels/m Flexible Black PCB Full Color LED Pixel Strip Dream Color IP30 Non-Waterproof Making LED Screen, LED Wall Only DC5V](https://www.amazon.com/BTF-LIGHTING-Flexible-Individually-Addressable-Non-waterproof/dp/B01CDTED80/ref=sr_1_5) |
 | 400 Tie Breadboard | $6 | [BB400 Solderless Plug-in BreadBoard, 400 tie-Points, 4 Power Rails, with Metal Backing Plate, 3.3 x 2.2 x 0.3in (84 x 55 x 9mm)](https://www.amazon.com/BB400-Solderless-BreadBoard-tie-Points-Backing/dp/B00Q9G8MQS/ref=sr_1_14) |
 
-# Long Lasting Rechargable Batteries
+# Long Lasting Rechargeable Batteries
 
 ![Battery Pack](img/battey-pack.png)
 
-For those of you that don't want to have to run out to the store and purchase AAA or AA batteries each time the kids run out of power, one option is to invest in one of these incredible 5V Lithium rechargeable batter packs.  They will last about 10x longer than 3 AAA batteries and you can recharge them on any USB port of a laptop or a wall wart.
+For those of you that don't want to have to run out to the store and purchase AAA or AA batteries each time the kids run out of power, one option is to invest in one of these incredible 5V Lithium rechargeable battery packs.  They will last about 10x longer than 3 AAA batteries and you can recharge them on any USB port of a laptop or a wall wart.
 
 Here is a link to the new version of the PURSUN battery pack for $13.99 that has a built-in percentage power remaining indicator:
 
-[PURSUN 10,000 mah with display](https://www.amazon.com/Updated-Compact-10000mAh-Technology-Portable/dp/B07YB9K7WJ/ref=sr_1_1?dchild=1&keywords=10000mah+with+percent+charged+display&qid=1600136038&sr=8-1)
+[PURSUN 10,000 mAh USB power pack with display $11.99](https://www.amazon.com/Updated-Compact-10000mAh-Technology-Portable/dp/B07YB9K7WJ/ref=sr_1_1?dchild=1&keywords=10000mah+with+percent+charged+display&qid=1600136038&sr=8-1)
 
+[YOBON 12,000 mAh USB power pack with percent display $13.99](https://www.amazon.com/Portable-12000mAh-External-Powerpack-Smartphone/dp/B07ZNWFY5P)
 
 Another favorite is the Anker PowerCore for about $20 on Amazon:
 

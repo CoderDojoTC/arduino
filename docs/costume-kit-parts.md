@@ -1,10 +1,12 @@
 # Costume Kit Purchasing Guide
 
-The following parts list are designed for our annual Halloween Costume Project.  We have been doing these classes since 2014 and we think it is a great way to get kids interested in programming.
+![Nano and LED Strip](img/nano-and-strip.jpg)
 
-In addition to these kits, you will need a PC or laptop with a USB port that you can install the Arduino IDE and drivers.  If you don't have admin rights to this computer you can't use it for this project.
+The following parts lists are designed for our annual Halloween Costume Project.  We have been doing these classes since 2014 in conjunction with the IoT Hackday project. We think it is a great way to get kids interested in programming.  Special thanks to Justin Grammens for all his help organizing these events.
 
-These kits assume that you have a soldering iron and solder.  The LED strips only have three wires that need to be connected and if you use a breadboard you can get by with minimal soldering.  It helps to have some 24 gauge solid-core wire to solder wires that can easily slide into the breadboards.
+In addition to these kits, you will need a PC or laptop with a USB port that you can install the Arduino IDE and Arduino device drivers.  If you don't have admin rights to your computer you can't use it for this project.
+
+These kits assume that you have a soldering iron and solder.  But you don't have to do a lot of soldering!  The LED strips only have three wires that need to be connected. If you use a breadboard you can get by with minimal soldering.  It helps to have some 24-gauge solid-core wire to solder wires that can easily slide into the breadboards.  For elaborate costumes that have LEDs on different parts of the costume we suggest black 24-gauge stranded wire.  The stranded wire is more flexible and will not break after being bent repeatedly.
 
 If you are a cost-conscious buyer, we strongly suggest you start to order your parts around mid-September.  This allows the lower cost parts to be ordered from China.  They take 2-3 weeks to arrive and if you don't get them by the first week of October you can still reorder some missing parts.
 
@@ -50,11 +52,15 @@ Another favorite is the Anker PowerCore for about $20 on Amazon:
 
 This more than doubles the cost of the kits, but they really are nice and they can also charge your cell phone!
 
-
-
 ## Buttons and Potentiometers
 Some students like to modify their costumes with switches that change the pattern or change the speed or brightness.  Here are parts you can use for these:
 
 [Push Button: Tactile Push Button Switch Momentary Tact & Cap 12x12x7.3mm Assorted Kit Arduino USD $8.99](https://www.ebay.com/itm/Tactile-Push-Button-Switch-Momentary-Tact-Cap-12x12x7-3mm-Assorted-Kit-Arduino/222517498810)
 
 [10K Ohm Linear Potentiometer](https://www.ebay.com/itm/B10K-Electrical-With-Knob-Rotary-Potentiometer-Accessories-Linear-Switch-WH148/254691066223)
+
+## Neopixel Rings
+
+Some of our students love the Neopixel rings.  They come in several sizes but they often require some fine soldering work.
+
+[1, 8, 12, 16, 24 Neopixel Ring Set $20.00 USD](https://www.ebay.com/itm/1-8-12-16-24-LED-Ring-Set-WS2812-RGB-Compatible-with-Neopixel/254001827423)

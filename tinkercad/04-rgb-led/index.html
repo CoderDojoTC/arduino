@@ -19,7 +19,7 @@
     
     
       
-        <title>Introduction - CoderDojo TC Arduino</title>
+        <title>RGB LED Lab - CoderDojo TC Arduino</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#learning-to-program-arduino-with-tinkercadtm" class="md-skip">
+        <a href="#rgb-led-lab" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Introduction
+              RGB LED Lab
             
           </span>
         </div>
@@ -233,12 +233,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Beginning Arduino Online with Tinkercad
@@ -260,88 +258,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Introduction
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Introduction" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../00-intro/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blink" class="md-nav__link">
-    Blink
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#blink-three-leds" class="md-nav__link">
-    Blink Three LEDs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-blink-speed-with-a-potentiometer" class="md-nav__link">
-    Change Blink Speed with a Potentiometer
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rgb-led" class="md-nav__link">
-    RGB LED
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ping-sensor" class="md-nav__link">
-    Ping Sensor
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#photo-sensor" class="md-nav__link">
-    Photo Sensor
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -718,43 +639,90 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blink" class="md-nav__link">
-    Blink
+  <a href="#concepts" class="md-nav__link">
+    Concepts
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#blink-three-leds" class="md-nav__link">
-    Blink Three LEDs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-blink-speed-with-a-potentiometer" class="md-nav__link">
-    Change Blink Speed with a Potentiometer
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#rgb-led" class="md-nav__link">
     RGB LED
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#varying-color-and-brightness-using-analog-output-pulse-width-modulation" class="md-nav__link">
+    Varying Color and Brightness Using Analog Output (Pulse-Width Modulation)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circuit-diagram" class="md-nav__link">
+    Circuit Diagram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#ping-sensor" class="md-nav__link">
-    Ping Sensor
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-analogwrite" class="md-nav__link">
+    Using analogWrite
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-your-own-simple-functions" class="md-nav__link">
+    Creating Your Own Simple Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-full-program" class="md-nav__link">
+    The Full Program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-example-on-tinkercad" class="md-nav__link">
+    Working Example on Tinkercad
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#photo-sensor" class="md-nav__link">
-    Photo Sensor
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food-for-thought" class="md-nav__link">
+    Food for Thought
   </a>
   
 </li>
@@ -771,7 +739,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/arduino/blob/master/docs/tinkercad/00-intro.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/arduino/blob/master/docs/tinkercad/04-rgb-led.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -779,24 +747,143 @@
                   
                 
                 
-                <h1 id="learning-to-program-arduino-with-tinkercadtm">Learning to Program Arduino with Tinkercad(TM)</h1>
-<p>We will be using Autocad's web-based tool <a href="https://www.tinkercad.com/">TinkerCad(TM)</a> to learn how to program with an Arduino.  This is a good way to get started if you are doing online mentoring or if you have difficulty installing customized
-Arduino drivers or the Arduino IDE on your computer.</p>
-<p>Here are the labs we will do:</p>
-<h2 id="blink">Blink</h2>
-<p>Make a single LED go on and off.  We will also learn about how to wire up an LED using a current limiting resistor so we don't burn out our LEDs.  You can go to the lab by clicking <a href="../01-blink/">here</a> or use the navigation menu on the left to get to this lab.</p>
-<h2 id="blink-three-leds">Blink Three LEDs</h2>
-<p>Make two or more LEDs blink with various patterns.  Click <a href="../02-blink-three-leds/">here</a> to go to the lab.</p>
-<h2 id="change-blink-speed-with-a-potentiometer">Change Blink Speed with a Potentiometer</h2>
-<p>Use a potentiometer to change the frequency of a flashing LED.
-Click <a href="../03-change-blink-speed/">here</a></p>
-<h2 id="rgb-led">RGB LED</h2>
-<p>Use an RGB LED to make all the colors of the rainbow.
-Click <a href="../04-rgb-led/">here</a></p>
-<h2 id="ping-sensor">Ping Sensor</h2>
-<p>Measure the distance using an ultrasonic ping sensor.  This will be very useful when we want to build a collision-avoidance robot.</p>
-<h2 id="photo-sensor">Photo Sensor</h2>
-<p>Use a photoresistor to measure how much light is present in a room.</p>
+                <h1 id="rgb-led-lab">RGB LED Lab</h1>
+<p>In this lab, we will learn how to make an RGB (Red-Green-Blue) LED display different colors by mixing red, green, and blue light.</p>
+<h2 id="concepts">Concepts</h2>
+<h3 id="rgb-led">RGB LED</h3>
+<p>An RGB LED is actually three small LEDs &mdash; one red, one green and one blue &mdash; inside a normal LED housing. The RGB LED included in this kit has all the internal LEDs share the same ground wire, so there are four legs in total. To turn one color on, ensure ground is connected, then power one of the legs just as you would a regular LED. If you turn on more than one color at a time, you will see the colors start to blend together to form a new color.</p>
+<p>Just like a regular LED, an RGB LED is polarized and only allows electricity to flow in one direction. Pay close attention to the flat edge and to the different length legs. Both are indicators to help orient the LED correctly.</p>
+<p>Here is a picture of an RGB LED with the legs labeled:</p>
+<p><img alt="RGB LED diagram" src="../img/04-rgb-led-diagram.png" /></p>
+<h3 id="varying-color-and-brightness-using-analog-output-pulse-width-modulation">Varying Color and Brightness Using Analog Output (Pulse-Width Modulation)</h3>
+<p>In Circuit 3, you learned about analog output versus digital output. Now you are going to apply this knowledge to creating different colors of varying brightness.</p>
+<p>You can use the <code>digitalWrite()</code> command to turn pins on the Arduino on (5V) or off (0V), but what if you want to output 2.5V? The Arduino doesn't have an analog output, but it is really good at switching some digital pins on and off fast enough to simulate an analog output. <code>analogWrite()</code> can output 2.5 volts by quickly switching a pin on and off so that the pin is only on 50 percent of the time (50% of 5V is 2.5V). By changing the percent of time that a pin is on, from 0 percent (always off) to 100 percent (always on), <code>analogWrite()</code> can output any voltage between 0 and 5V. This is what is known as pulse-width modulation (or PWM). By using PWM, you can create many different colors with the RGB LED.</p>
+<p>Only a few of the digital pins on the Uno and RedBoard have the circuitry needed to turn on and off fast enough for PWM. These are pins 3, 5, 6, 9, 10 and 11. Each PWM pin is marked with a ~ on the board. Remember, you can only use <code>analogWrite()</code> on these pins.</p>
+<p><img alt="PWM pins diagram" src="../img/04-pwm-pins.jpg" /></p>
+<h3 id="circuit-diagram">Circuit Diagram</h3>
+<p>Here is the circuit diagram we will use for our lab:</p>
+<p><img alt="RGB LED circuit diagram" src="../img/04-rgb-led-circuit.PNG" /></p>
+<h2 id="code">Code</h2>
+<h3 id="using-analogwrite">Using <code>analogWrite</code></h3>
+<p>The <code>analogWrite</code> function outputs a voltage between 0 and 5V to a pin. The function breaks the range between 0 and 5V into 255 little steps. That means each 50 steps corresponds to an increase of about 1 volt. By varying the voltage that gets sent to the red, green, and blue pins that are connected to the legs of the RGB LED, you can create 16,777,216 different colors. That's a lot of color!</p>
+<h3 id="creating-your-own-simple-functions">Creating Your Own Simple Functions</h3>
+<p>When programmers want to use a piece of code over and over again, they write a <strong>function</strong>. The simplest functions are just chunks of code that you give a name to. When you want to run that code, you can “call” the function by typing its name, instead of writing out all of the code. More complicated functions take and return pieces of information from the program (we call these pieces of information <strong>parameters</strong>). In this circuit, you'll write functions to turn the RGB LED different colors by just typing that color's name.</p>
+<p>Here is a function that turns the RBG LED red:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">red</span> <span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<h3 id="the-full-program">The Full Program</h3>
+<p>Here is the full program:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">// LEDs are connected to these pins</span>
+<span class="kt">int</span> <span class="n">RedPin</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">GreenPin</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">BluePin</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Set the LED pins to output</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Show each color for a second</span>
+  <span class="n">red</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">orange</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">yellow</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">green</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">cyan</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">blue</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">magenta</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+  <span class="c1">// Turn the LED off for a second before starting over again</span>
+  <span class="n">turnOff</span><span class="p">();</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set the LED pins to values that make red. */</span>
+<span class="kt">void</span> <span class="nf">red</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set the LED pins to values that make orange. */</span>
+<span class="kt">void</span> <span class="nf">orange</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set the LED pins to values that make yellow. */</span>
+<span class="kt">void</span> <span class="nf">yellow</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set the LED pins to values that make green. */</span>
+<span class="kt">void</span> <span class="nf">green</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set the LED pins to values that make cyan. */</span>
+<span class="kt">void</span> <span class="nf">cyan</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set the LED pins to values that make blue */</span>
+<span class="kt">void</span> <span class="nf">blue</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set the LED pins to values that make magenta. */</span>
+<span class="kt">void</span> <span class="nf">magenta</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Set all three LED pins to 0 or OFF */</span>
+<span class="kt">void</span> <span class="nf">turnOff</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">RedPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">GreenPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">analogWrite</span><span class="p">(</span><span class="n">BluePin</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>You can type this into the Tinkercad program or copy this code and paste it into the Tinkercad code area.</p>
+<h2 id="working-example-on-tinkercad">Working Example on Tinkercad</h2>
+<p><a href="https://www.tinkercad.com/things/jTbXltJyBlT">RGB LED on Tinkercad</a></p>
+<h2 id="experiments">Experiments</h2>
+<ol>
+<li>Can you create your own function to turn the RGB LED a different color?</li>
+<li>Can you turn the RGB LED white?</li>
+<li>Note that we are not turning the LED on to full brightness (255) in this code so that the light is not too bright. Try changing these values and see what happens.</li>
+</ol>
+<h2 id="food-for-thought">Food for Thought</h2>
+<p>Why is it that to get white light, you mix red, green, and blue in equal amounts, but mixing red, green, and blue paint will not get you white paint?</p>
+<p>If you would like to learn more about mixing light, here is a <a href="https://en.wikipedia.org/wiki/Color_mixing">Wikipedia Article on Color Mixing</a></p>
                 
               
               
@@ -811,41 +898,6 @@ Click <a href="../04-rgb-led/">here</a></p>
       
         
   <footer class="md-footer">
-    
-      <div class="md-footer-nav">
-        <nav class="md-footer-nav__inner md-grid">
-          
-            <a href="../../costume-kit-parts/" title="Costume Kit Parts List" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-              <div class="md-flex__cell md-flex__cell--shrink">
-                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-              </div>
-              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                <span class="md-flex__ellipsis">
-                  <span class="md-footer-nav__direction">
-                    Previous
-                  </span>
-                  Costume Kit Parts List
-                </span>
-              </div>
-            </a>
-          
-          
-            <a href="../00-tinkercad-account-setup/" title="Tinkercad Account" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                <span class="md-flex__ellipsis">
-                  <span class="md-footer-nav__direction">
-                    Next
-                  </span>
-                  Tinkercad Account
-                </span>
-              </div>
-              <div class="md-flex__cell md-flex__cell--shrink">
-                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-              </div>
-            </a>
-          
-        </nav>
-      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">

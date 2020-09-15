@@ -19,11 +19,11 @@ has
 5. answers to the challenge on the back of the card
 <br/> See [Designing Concept Cards](https://coderdojotc.github.io/CoderDojoTC/designing-concept-cards/)
 
-##### Integrated Development Environment
+#### Integrated Development Environment
 An integrated development environment is a software program used for writing, checking, debugging and downloading software into the Arduino.  Some IDEs also have data visualization tools for plotting the output of sensors.
 <br/> See also: IDE
 
-##### Pulse Wave Modulation
+#### Pulse Wave Modulation
 A way of controlling the speed of a motor or the intensity of a light by changing the amount of time a signal is on.  On the Arduino only a subset of output pins can be used to send PWM signals.  On the Arduino Nano these are pins 3,5,6,9, 10 and 11.
 <br/> See also: PWM
 

@@ -2,6 +2,8 @@
 
 The following parts list are designed for our annual Halloween Costume Project.  We have been doing these classes since 2014 and we think it is a great way to get kids interested in programming.
 
+In addition to these kits, you will need a PC or laptop with a USB port that you can install the Arduino IDE and drivers.  If you don't have admin rights to this computer you can't use it for this project.
+
 These kits assume that you have a soldering iron and solder.  The LED strips only have three wires that need to be connected and if you use a breadboard you can get by with minimal soldering.  It helps to have some 24 gauge solid-core wire to solder wires that can easily slide into the breadboards.
 
 If you are a cost-conscious buyer, we strongly suggest you start to order your parts around mid-September.  This allows the lower cost parts to be ordered from China.  They take 2-3 weeks to arrive and if you don't get them by the first week of October you can still reorder some missing parts.

@@ -6,12 +6,12 @@ The following parts lists are designed for our annual Halloween Costume Project.
 
 In addition to these kits, you will need a PC or laptop with a USB port that you can install the Arduino IDE and Arduino device drivers.  If you don't have admin rights to your computer you can't use it for this project.
 
-These kits assume that you have a soldering iron and solder.  But you don't have to do a lot of soldering!  The LED strips only have three wires that need to be connected. If you use a breadboard you can get by with minimal soldering.  It helps to have some 24-gauge solid-core wire to solder wires that can easily slide into the breadboards.  For elaborate costumes that have LEDs on different parts of the costume we suggest black 24-gauge stranded wire.  The stranded wire is more flexible and will not break after being bent repeatedly.
+These kits assume that you have a soldering iron and solder.  But you don't have to do a lot of soldering!  The LED strips only have three wires that need to be connected. If you use a breadboard you can get by with minimal soldering.  It helps to have some 24-gauge solid-core wire to solder wires that can easily slide into the breadboards.  For elaborate costumes that have LEDs on different parts of the costume we suggest black 26-gauge stranded wire.  The stranded wire is more flexible and will not break after being bent repeatedly.  See below for sample links.
 
 If you are a cost-conscious buyer, we strongly suggest you start to order your parts around mid-September.  This allows the lower cost parts to be ordered from China.  They take 2-3 weeks to arrive and if you don't get them by the first week of October you can still reorder some missing parts.
 
 ## Getting Low-Cost Hardware From eBay/China In Time
-If you are a good planner and willing to do some work you can get very low-cost parts from China at a fraction of the prices you see in kits.  Just remember that the parts should be ordered 2-3 weeks before your courses start.
+If you are a good planner and willing to do some work you can get very low-cost parts from China at a fraction of the prices you see on Amazon or in various kits.  Just remember that the parts should be ordered 2-3 weeks before your courses start.
 
 For the Hardware Courses here are the typical components you will use:
 
@@ -47,11 +47,12 @@ Here is a link to the new version of the PURSUN battery pack for $13.99 that has
 
 [YOBON 12,000 mAh USB power pack with percent display $13.99](https://www.amazon.com/Portable-12000mAh-External-Powerpack-Smartphone/dp/B07ZNWFY5P)
 
+[Aibocn Mini Power Bank 6700mAh $8.99](https://www.amazon.com/dp/B078PYMRTK/?coliid=I3EIC29FT51JJR)
 Another favorite is the Anker PowerCore for about $20 on Amazon:
 
 [Anker PowerCore 10000 Portable Charger](https://www.amazon.com/Anker-PowerCore-Ultra-Compact-High-Speed-Technology/dp/B0194WDVHI/ref=sr_1_15)
 
-This more than doubles the cost of the kits, but they really are nice and they can also charge your cell phone!
+These chargers can double the cost of the kits, but they really are nice and they can also charge your cell phone!
 
 ## Buttons and Potentiometers
 Some students like to modify their costumes with switches that change the pattern or change the speed or brightness.  Here are parts you can use for these:
@@ -65,3 +66,8 @@ Some students like to modify their costumes with switches that change the patter
 Some of our students love the Neopixel rings.  They come in several sizes but they often require some fine soldering work.
 
 [1, 8, 12, 16, 24 Neopixel Ring Set $20.00 USD](https://www.ebay.com/itm/1-8-12-16-24-LED-Ring-Set-WS2812-RGB-Compatible-with-Neopixel/254001827423)
+
+## Extra Wire
+For costumes that have LED sewn through the costume you will need extra flexible stranded wire.  We like the 28 gauge stranded wire for this.
+
+[28 AWG Flexible Stranded Wire on eBay](https://www.ebay.com/itm/14AWG-28AWG-Flexible-Stranded-Silicone-Wire-Tinned-Copper-Line-11-Colors-5M-10M/184410755004)

@@ -12,6 +12,9 @@ nav:
     - Blink Three LEDs: tinkercad/02-blink-three-leds.md
     - Use Pot to Change Blink Speed: tinkercad/03-change-blink-speed.md
 
+  - Arduino Uno:
+    - Introduction: uno/index.md
+
   - Beginning Arduino (Nano Version):
     - Blink: nano/01-blink.md
     - Three LEDs: nano/02-three-leds.md
@@ -34,6 +37,7 @@ nav:
   - Glossary: glossary.md
   - Instructors Guide: instructors-guide.md
   - Contributing: contribute.md
+  - Resources: resources.md
   - Contact: contact.md
 
 site_description: 'Resources for teaching Arduino to CoderDojo Twin Cities students.'

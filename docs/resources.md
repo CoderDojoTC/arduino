@@ -16,4 +16,14 @@ These labs use standard Arduino Nano hardware to keep the costs of our projects 
 ## Arduino Displays
 This course has a narrow focus using displays with the Arduino.  We have many labs that use low-cost OLED displays to create fun low-cost games that students can easily put in a backpack and take to school.  The pong game is a favorite with our students.
 
+## Moving Rainbow
+This site has many projects that use the low-cost Arduino Nano and LED strips.  We are in the process of moving the content to support mkdocs on GitHub pages.
+The site also has teaching materials for your own events.
+<br/>
+[Arduino Moving Rainbow](https://github.com/dmccreary/moving-rainbow).
+
+## CoderDojo Robots
+This site has many projects base on the low-cost ($25) CoderDojo Arduino Robot Kit.<br/>
+[$25 Robot Platform for Teaching Programming on Instructables](https://www.instructables.com/Collision-Avoidance-Robot-for-Teaching-Programming/)<br/>
+[CoderDojo Robots](http://dmccreary.github.io/coderdojo-robots/)
 

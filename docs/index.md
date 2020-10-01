@@ -1,4 +1,9 @@
-# Introduction to Arduino
+# CoderDojo Twin Cities Arduino Resources
+
+Welcome! This web site is for students and mentors that are participating in the Twin Cities CoderDojo sessions using the Arduino. 
+Please let one of the mentors know if you have feedback that you think will help others.
+
+![Arduino LED Strip Project](./img/arduino-led-strip-project-boxed.png)
 
 ## Course Types
 There are three types of courses in the CoderDojo Twin Cities Arudino:
@@ -22,3 +27,8 @@ We use both the Uno and the Nano in our classrooms. The main difference between 
 
 We also use Nanos for our projects since they can easily fit on a breadboard and we can get them in bulk for around $3 from China.  This is called a DIP-30 package (Dual Inline Package with 30 pins).
 
+## Tinkercad
+This is just the basics of creating Arduino circuits using the Tinkercad web-based Arduino simulator.  We start out with the Blink lab and then go on to use many LEDs, add sensors and other projects that demonstrate various Arduino programming concepts.
+
+## Tinkercad LED Strips
+This course is ideal for students to learn how to program the low-cost LED strips.  Once the students master the online labs they can purchase their own kits or participate in our popular costume contests or create "art bikes" that glow with patterns at night.  [Iinkercad LED Strips Course](./tinkercad-neopixel/00-intro.md).

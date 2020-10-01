@@ -1,7 +1,6 @@
-site_name: 'CoderDojo TC Arduino'
+site_name: 'CoderDojo Twin Cities Arduino'
 nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
-  - Introduction: introduction.md
   - Purchasing Guide: purchasing-guide.md
   - Costume Kit Parts List: costume-kit-parts.md
 

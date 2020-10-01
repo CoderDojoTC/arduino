@@ -1,6 +1,7 @@
 site_name: 'CoderDojo Twin Cities Arduino'
 nav:
-  - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
+  - CoderDojo TC Main Site: https://coderdojotc.github.io/CoderDojoTC/
+  - Arduino Home: index.md
   - Purchasing Guide: purchasing-guide.md
   - Costume Kit Parts List: costume-kit-parts.md
 
@@ -15,6 +16,7 @@ nav:
     - Introduction: uno/index.md
 
   - Beginning Arduino (Nano Version):
+    - Introduction: nano/00-intro.md
     - Blink: nano/01-blink.md
     - Three LEDs: nano/02-three-leds.md
     - Blink Speed Pot: nano/03-blink-speed-pot.md
@@ -28,6 +30,7 @@ nav:
     - Blink: tinkercad-neopixel/01-blink.md
     - Move: tinkercad-neopixel/02-move.md
     - Back and Forth: tinkercad-neopixel/03-back-and-forth.md
+    - RGB: tinkercad/04-rgb-led.md
     - Move Red, Green, Blue: tinkercad-neopixel/04-rgb-back-and-forth.md
 
   - Arduino Displays:
@@ -35,7 +38,9 @@ nav:
     - The OLED Display: display/oled.md
   - Glossary: glossary.md
   - Instructors Guide: instructors-guide.md
+  - Classroom and Home Setup: 
   - Contributing: contribute.md
+  - References: references.md
   - Resources: resources.md
   - Contact: contact.md
 

@@ -43,6 +43,7 @@ void loop() {
   pixels.show();
   delay(500);
 }
+```
 
 ### Full Code
 ```C
